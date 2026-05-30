@@ -1,0 +1,112 @@
+.neon-header {
+  background: #0b0c10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  border-bottom: 2px solid #66fcf1;
+  box-shadow: 0 0 15px rgba(102, 252, 241, 0.2);
+  font-family: sans-serif;
+}
+
+.neon-logo {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-shadow: 0 0 8px #66fcf1;
+  cursor: pointer;
+}
+
+.neon-logo span {
+  color: #45f3ff;
+  text-shadow: 0 0 12px #45f3ff;
+}
+
+.neon-search-container {
+  display: flex;
+  flex: 1;
+  margin: 0 50px;
+  max-width: 650px;
+  background: #1f2833;
+  border: 1px solid #66fcf1;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 4px 10px;
+  transition: 0.3s ease;
+}
+
+.neon-search-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+.voice-btn {
+  background: transparent;
+  border: none;
+  color: #66fcf1;
+  padding: 0 12px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.neon-search-btn {
+  background: transparent;
+  border: none;
+  color: #66fcf1;
+  padding: 0 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.neon-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.neon-link {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.user-tag {
+  font-size: 10px;
+  color: #66fcf1;
+  letter-spacing: 1px;
+}
+
+.action-tag {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.neon-cart {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-icon {
+  color: #66fcf1;
+  font-size: 26px;
+}
+
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: #ff0055;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 7px;
+  font-size: 10px;
+  font-weight: bold;
+  box-shadow: 0 0 8px #ff0055;
+}
