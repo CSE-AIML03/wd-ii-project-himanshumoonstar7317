@@ -1,6 +1,8 @@
 import React from 'react';
 import './CartPage.css';
 
+const BACKUP_IMAGE = "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=400";
+
 function CartPage({ cartItems, updateQuantity, navigate }) {
   const subtotal = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
@@ -18,7 +20,13 @@ function CartPage({ cartItems, updateQuantity, navigate }) {
           <div className="cart-items-list">
             {cartItems.map(item => (
               <div key={item.id} className="cart-item-card">
-                <img src={item.image} alt={item.name} className="cart-item-img" />
+                {/* 🛠️ onError safety check */}
+                <img 
+                  src={item.image} 
+                  alt={item.name} 
+                  className="cart-item-img" 
+                  onError={(e) => { e.target.src = BACKUP_IMAGE; }}
+                />
                 <div className="cart-item-details">
                   <h3>{item.name}</h3>
                   <p className="item-price">₹{item.price.toLocaleString('en-IN')}</p>
